@@ -1,14 +1,92 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Test4.MainPage">
+<ContentPage
+    x:Class="Test4.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <StackLayout Orientation="Vertical">
-        <Label Text="Zaloguj się"/>
-        <Label Text="Login"/>
-        <Entry x:Name="Login"/>
-        <Entry IsPassword="True" x:Name="Password"/>
-        <Button Clicked="Login"/>
-    </StackLayout>
-
+    <Frame
+        Margin="10"
+        Padding="50"
+        BorderColor="LightSkyBlue"
+        CornerRadius="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                FontAttributes="Bold"
+                FontSize="30"
+                HorizontalOptions="Center"
+                Text="Zaloguj się"
+                TextColor="LightBlue"
+                VerticalOptions="Center" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                FontSize="25"
+                HorizontalOptions="Center"
+                Text="Login:"
+                FontAttributes="Bold"
+                TextColor="LightBlue"
+                VerticalOptions="Center" />
+            <Entry
+                x:Name="LoginTxt"
+                Grid.Row="1"
+                Grid.Column="1"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                TextColor="LightBlue"
+                VerticalOptions="Center"
+                WidthRequest="200" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                FontSize="25"
+                HorizontalOptions="Center"
+                Text="Hasło:"
+                FontAttributes="Bold"
+                TextColor="LightBlue"
+                VerticalOptions="Center" />
+            <Entry
+                x:Name="Password"
+                Grid.Row="2"
+                Grid.Column="1"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                IsPassword="True"
+                TextColor="LightBlue"
+                VerticalOptions="Center"
+                WidthRequest="200" />
+            <Button Clicked="Login" 
+                    Text="Zaloguj się"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="25"
+                    TextColor="LightBlue"
+                    BorderColor="LightBlue"
+                    BorderWidth="5"
+                    CornerRadius="10"
+                    FontAttributes="Bold"
+                    WidthRequest="200"
+                    HeightRequest="60"
+                    BackgroundColor="White"/>
+        </Grid>
+    </Frame>
 </ContentPage>

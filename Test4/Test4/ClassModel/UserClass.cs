@@ -8,5 +8,12 @@ namespace Test4.ClassModel
     {
         public string Class { get; set; }
         public string Path { get; set; }
+
+        public UserClass(string @class, string path)
+        {
+            Class = @class;
+            Path = path;
+        }
     }
+
 }
