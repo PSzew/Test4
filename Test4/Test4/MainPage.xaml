@@ -2,8 +2,8 @@
 <ContentPage
     x:Class="Test4.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False">
     <Frame
         Margin="10"
         Padding="50"
