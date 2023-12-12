@@ -19,7 +19,7 @@ namespace Test4
 
         private void LogOut(object sender, EventArgs e)
         {
-            
+            Navigation.PopAsync();
         }
     }
 }
