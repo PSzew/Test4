@@ -6,7 +6,7 @@
     <StackLayout Orientation="Vertical">
         <Label Text="Zaloguj się"/>
         <Label Text="Login"/>
-        <Entry x:Name="Login"/>
+        <Entry x:Name="LoginTxT"/>
         <Entry IsPassword="True" x:Name="Password"/>
         <Button Clicked="Login"/>
     </StackLayout>
